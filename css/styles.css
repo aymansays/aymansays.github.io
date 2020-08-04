@@ -1,0 +1,32 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+#container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 2em 4em;
+}
+
+header {
+    display: flex;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    background: white;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    padding: 0 5px;
+}
+
+#name {
+    font-size: 36px;
+}
