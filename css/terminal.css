@@ -1,0 +1,48 @@
+#terminal {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+#terminal-header {
+    display: flex;
+    justify-content: space-between;
+    height: 1.75em;
+    padding: 0 0.5em;
+    text-align: center;
+    align-items: center;
+    background: #f2f2f2;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+#terminal-content {
+    padding: 0.5em;
+    background: white;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+.terminal-button {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    padding: 0.5em;
+    border-style: none;
+}
+
+#close-terminal {
+    background-color: #ff4d4d;
+}
+
+#minimise-terminal {
+    background-color: #ffc14d;
+}
+
+#enlarge-terminal {
+    background-color: #4dff4d;
+}

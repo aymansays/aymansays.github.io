@@ -1,6 +1,7 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
+    font-size: 16px;
 }
 
 #container {
@@ -16,6 +17,9 @@ header {
     top: 0;
     justify-content: space-between;
     background: white;
+    border-style: dotted;
+    border-color: red;
+    box-shadow: 0 4px 2px -2px gray;
 }
 
 header div {
@@ -24,9 +28,20 @@ header div {
 }
 
 header a {
-    padding: 0 5px;
+    padding: 0 0.5em;
 }
 
 #name {
-    font-size: 36px;
+    font-size: 2.5em;
+}
+
+#intro {
+    animation-name: slidein;
+    animation-duration: 3s;
+}
+
+.section {
+    padding: 1em 0;
+    border-style: dotted;
+    border-color: red;
 }
