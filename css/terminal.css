@@ -1,6 +1,6 @@
 #terminal {
     font-family: monospace;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 #terminal-header {
@@ -10,19 +10,16 @@
     padding: 0 0.5em;
     text-align: center;
     align-items: center;
+    color: black;
     background: #f2f2f2;
-    border-style: solid;
-    border-color: black;
-    border-width: thin;
+    border-style: none;
     border-radius: 0.5em 0.5em 0 0;
 }
 
 #terminal-content {
-    padding: 0.5em;
-    background: white;
-    border-style: solid;
-    border-color: black;
-    border-width: thin;
+    padding: 0.75em;
+    background: #49483E;
+    border-style: none;
     border-radius: 0 0 0.5em 0.5em;
 }
 
@@ -45,4 +42,12 @@
 
 #enlarge-terminal {
     background-color: #4dff4d;
+}
+
+.input {
+    color: #a6e22e;
+}
+
+.output {
+    color: #a6e22e;
 }
