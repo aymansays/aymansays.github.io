@@ -1,5 +1,5 @@
 #terminal {
-    font-family: monospace;
+    font-family: "Courier New", Courier, Consolas, monospace;
     font-size: 1rem;
     padding: 0 0 4rem 0;
 }
@@ -64,7 +64,7 @@
 }
 
 .output.light {
-    color: green;
+    color: #2aa198;
 }
 
 .link {
@@ -73,5 +73,5 @@
 }
 
 .link.light {
-    color: blue;
+    color: #859900;
 }

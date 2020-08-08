@@ -2,8 +2,8 @@ html {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 18px;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: #a9c8c8;
 }
 
 #container {
@@ -14,11 +14,9 @@ html {
 
 header {
     display: flex;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
     top: 0;
     justify-content: space-between;
-    background: inherit;
+    background: #a9c8c8;
 }
 
 header div {
