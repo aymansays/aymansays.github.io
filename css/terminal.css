@@ -24,6 +24,10 @@
     border-radius: 0 0 0.5rem 0.5rem;
 }
 
+#terminal-content.light {
+    background: #fdf6e3;
+}
+
 .terminal-button {
     display: inline-block;
     width: 0.75rem;
@@ -50,12 +54,24 @@
     padding: 0 0 0.5rem 0;
 }
 
+.input.light {
+    color: #dc322f;
+}
+
 .output {
     color: #e6db74;
     padding: 0 0 0.75rem 2.5rem;
 }
 
+.output.light {
+    color: green;
+}
+
 .link {
     color: #66d9ef;
     text-decoration: none;
+}
+
+.link.light {
+    color: blue;
 }
