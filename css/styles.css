@@ -31,11 +31,17 @@ header a {
     font-size: 2.5rem;
 }
 
-#intro {
-    animation-name: slidein;
-    animation-duration: 3s;
+.section {
+    padding: 1rem 0 2rem 0;
 }
 
-.section {
-    padding: 1rem 0;
+.title {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+footer {
+    font-size: 0.75rem;
+    text-align: center;
 }
