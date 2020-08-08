@@ -1,7 +1,7 @@
-body {
+html {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
     color: black;
     background-color: white;
 }
@@ -9,7 +9,7 @@ body {
 #container {
     width: 800px;
     margin: 0 auto;
-    padding: 2em 4em;
+    padding: 2rem 4rem;
 }
 
 header {
@@ -19,9 +19,6 @@ header {
     top: 0;
     justify-content: space-between;
     background: inherit;
-    border-style: dotted;
-    border-color: red;
-    /*box-shadow: 0 4px 2px -2px gray;*/
 }
 
 header div {
@@ -30,11 +27,11 @@ header div {
 }
 
 header a {
-    padding: 0 0.5em;
+    padding: 0 0.5rem;
 }
 
 #name {
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 #intro {
@@ -43,7 +40,5 @@ header a {
 }
 
 .section {
-    padding: 1em 0;
-    border-style: dotted;
-    border-color: red;
+    padding: 1rem 0;
 }
