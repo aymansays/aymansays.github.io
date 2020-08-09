@@ -4,14 +4,10 @@
   box-sizing: border-box;
 }*/
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Float four columns side by side */
+/* Float two columns side by side */
 .column {
-  width: 40%;
-  padding: 0 5px;
+  width: 45%;
+  margin: 1rem;
 }
 
 /* Remove extra left and right margins, due to padding in columns */
@@ -19,6 +15,8 @@ body {
   margin: 0 -5px;
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 /* Clear floats after the columns */
@@ -33,14 +31,36 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-color: #f1f1f1;
+  color: black;
+  background-color: white;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .column {
     width: 100%;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
   }
+}
+
+.head {
+  margin: 0 0 1rem 0;
+}
+
+.date {
+  font-size: 0.65rem;
+}
+
+.company {
+  font-weight: bold;
+}
+
+.position {
+  font-size: 0.65rem;
+}
+
+.description {
+  text-align: left;
+  font-size: 0.75rem;
 }
