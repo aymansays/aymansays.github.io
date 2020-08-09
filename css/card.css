@@ -4,10 +4,11 @@
   box-sizing: border-box;
 }*/
 
-/* Float two columns side by side */
+/* One column layout (vertical) on small screens */
 .column {
-  width: 45%;
-  margin: 1rem;
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 /* Remove extra left and right margins, due to padding in columns */
@@ -35,12 +36,11 @@
   background-color: white;
 }
 
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 900px) {
+/* Responsive columns - two columns side by side */
+@media screen and (min-width: 900px) {
   .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 1rem;
+    width: 45%;
+    margin: 1rem;
   }
 }
 
