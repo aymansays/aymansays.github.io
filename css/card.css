@@ -29,8 +29,8 @@
 
 /* Style the counter cards */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 0.75rem;
   text-align: center;
   color: black;
   background-color: white;
