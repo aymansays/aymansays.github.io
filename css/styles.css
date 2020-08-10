@@ -1,21 +1,20 @@
 html {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 100%;
     color: white;
     background-color: #a9c8c8;
 }
 
 #container {
     max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem 4rem;
+    margin: 2rem auto;
+    padding: 0 0.5rem;
+    overflow: hidden;
 }
 
 header {
-    display: flex;
-    top: 0;
-    justify-content: space-between;
+    display: block;
 }
 
 header div {
@@ -24,7 +23,7 @@ header div {
 }
 
 header a {
-    padding: 0 0.5rem;
+    padding: 0 1rem 0 0;
     color: white;
     text-decoration: none;
 }
@@ -40,5 +39,24 @@ header a {
 .title {
     font-size: 1.5rem;
     text-decoration: underline;
-    margin-bottom: 1rem;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 120%;
+    }
+
+    #container {
+        padding: 0 2rem;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header a {
+        padding: 0 0 0 1rem;
+    }
 }

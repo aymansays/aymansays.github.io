@@ -4,10 +4,19 @@
   box-sizing: border-box;
 }*/
 
-/* Float two columns side by side */
+/* One column layout (vertical) on small screens */
 .column {
-  width: 45%;
+  width: 100%;
+  display: block;
   margin: 1rem;
+}
+
+/* Responsive columns - two columns side by side */
+@media screen and (min-width: 900px) {
+  .column {
+    width: 45%;
+    margin: 1rem;
+  }
 }
 
 /* Remove extra left and right margins, due to padding in columns */
@@ -28,31 +37,40 @@
 
 /* Style the counter cards */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  /*padding: 0.75rem;*/
   text-align: center;
   color: black;
   background-color: white;
 }
 
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 1rem;
-  }
+.card:hover {
+  transform: translate(0, -5px);
+  transition: transform .25s;
+}
+
+.card:not(:hover) {
+  transform: translate(0, 5px);
+  transition: transform .25s;
+}
+
+.card img {
+  width: 100%;
+}
+
+.text {
+  padding: 0.75rem;
 }
 
 .head {
-  margin: 0 0 1rem 0;
+  padding: 0 0 0.5rem 0;
+  border-bottom: solid;
+  border-width: thin;
+  border-color: lightgray;
 }
 
-.date {
-  font-size: 0.65rem;
-}
-
-.company {
+.card-title {
   font-weight: bold;
 }
 
