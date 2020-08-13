@@ -52,7 +52,7 @@
 
 .input {
     color: #a6e22e;
-    padding: 0 0 0.5rem 0;
+    margin: 0 0 0.5rem 0;
 }
 
 .input.light {
@@ -61,7 +61,7 @@
 
 .output {
     color: #e6db74;
-    padding: 0 0 0.75rem 2.5rem;
+    margin: 0 0 0.75rem 2.5rem;
 }
 
 .output.light {
@@ -75,4 +75,20 @@
 
 .link.light {
     color: #859900;
+}
+
+#HelloWorld {
+    display: inline-block;
+    border-right: .15rem solid lightgray;
+    animation: cursor 1s step-end infinite;
+}
+
+@keyframes cursor {
+    from, to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: lightgray;
+    }
 }
