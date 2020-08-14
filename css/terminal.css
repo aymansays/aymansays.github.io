@@ -2,6 +2,8 @@
     font-family: "Courier New", Courier, Consolas, monospace;
     font-size: 1rem;
     padding: 0 0 4rem 0;
+    animation-name: fade-in;
+    animation-duration: 1s;
 }
 
 #terminal-header {
@@ -92,3 +94,13 @@
         border-color: lightgray;
     }
 }
+
+@keyframes fade-in {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%
+    }
+} 

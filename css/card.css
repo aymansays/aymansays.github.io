@@ -37,12 +37,13 @@
 
 /* Style the counter cards */
 .card {
-  /*border-radius: 0.0rem;*/
   box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  /*padding: 0.75rem;*/
   text-align: center;
   color: black;
   background-color: white;
+  /* Maybe add a card flip in the future? */
+  animation-name: fade-in;
+  animation-duration: 1s;
 }
 
 .card:hover {
@@ -60,7 +61,7 @@
 }
 
 .text {
-  padding: 0.75rem;
+  padding: 1rem;
 }
 
 .head {
@@ -82,3 +83,13 @@
   text-align: left;
   font-size: 0.75rem;
 }
+
+@keyframes fade-in {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%
+    }
+} 

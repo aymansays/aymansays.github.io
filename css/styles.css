@@ -32,6 +32,8 @@ header a {
 
 #name {
     font-size: 2.5rem;
+    animation-name: bounce;
+    animation-duration: 0.5s;
 }
 
 #Github {
@@ -50,9 +52,14 @@ header a {
     padding: 1rem 0 0 0;
 }
 
+.title-wrapper {
+    overflow: hidden;
+}
+
 .title {
     font-size: 1.5rem;
-    text-decoration: underline;
+    animation-name: slide-up;
+    animation-duration: 0.5s;
 }
 
 .underline:hover {
@@ -62,7 +69,7 @@ header a {
 @keyframes bounce {
     from {
         transform: translateY(100%);
-        opacity: 10%;
+        opacity: 0%;
     }
 
     50% {
@@ -72,6 +79,16 @@ header a {
     to {
         transform: translateY(0%);
         opacity: 100%;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(200%);
+    }
+
+    to {
+        transform: translateY(0%);
     }
 }
 
