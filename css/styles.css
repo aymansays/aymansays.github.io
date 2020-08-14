@@ -23,13 +23,27 @@ header div {
 }
 
 header a {
-    padding: 0 1rem 0 0;
+    margin: 0 1rem 0 0;
     color: white;
     text-decoration: none;
+    animation-name: bounce;
+    animation-duration: 0.5s;
 }
 
 #name {
     font-size: 2.5rem;
+}
+
+#Github {
+    animation-delay: 0s;
+}
+
+#LinkedIn {
+    animation-delay: 0.1s;
+}
+
+#Resume {
+    animation-delay: 0.2s;
 }
 
 .section {
@@ -39,6 +53,26 @@ header a {
 .title {
     font-size: 1.5rem;
     text-decoration: underline;
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(100%);
+        opacity: 10%;
+    }
+
+    50% {
+        transform: translateY(-50%);
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -57,6 +91,6 @@ header a {
     }
 
     header a {
-        padding: 0 0 0 1rem;
+        margin: 0 0 0 1rem;
     }
 }
