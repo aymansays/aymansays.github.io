@@ -3,7 +3,7 @@ html {
     font-weight: 300;
     font-size: 100%;
     color: white;
-    background-color: #a9c8c8;
+    background-color: #87aac8;
 }
 
 #container {
@@ -23,22 +23,73 @@ header div {
 }
 
 header a {
-    padding: 0 1rem 0 0;
+    margin: 0 1rem 0 0;
     color: white;
     text-decoration: none;
+    animation-name: bounce;
+    animation-duration: 0.5s;
 }
 
 #name {
     font-size: 2.5rem;
+    animation-name: bounce;
+    animation-duration: 0.5s;
+}
+
+#Github {
+    animation-delay: 0s;
+}
+
+#LinkedIn {
+    animation-delay: 0.1s;
+}
+
+#Resume {
+    animation-delay: 0.2s;
 }
 
 .section {
     padding: 1rem 0 0 0;
 }
 
+.title-wrapper {
+    overflow: hidden;
+}
+
 .title {
     font-size: 1.5rem;
+    animation-name: slide-up;
+    animation-duration: 0.5s;
+}
+
+.underline:hover {
     text-decoration: underline;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(100%);
+        opacity: 0%;
+    }
+
+    50% {
+        transform: translateY(-50%);
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(200%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -57,6 +108,6 @@ header a {
     }
 
     header a {
-        padding: 0 0 0 1rem;
+        margin: 0 0 0 1rem;
     }
 }

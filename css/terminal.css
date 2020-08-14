@@ -2,6 +2,8 @@
     font-family: "Courier New", Courier, Consolas, monospace;
     font-size: 1rem;
     padding: 0 0 4rem 0;
+    animation-name: fade-in;
+    animation-duration: 1s;
 }
 
 #terminal-header {
@@ -20,7 +22,7 @@
 
 #terminal-content {
     padding: 1rem 0.75rem;
-    background: #49483E;
+    background: #272822;
     border-style: none;
     border-radius: 0 0 0.5rem 0.5rem;
 }
@@ -51,21 +53,21 @@
 }
 
 .input {
-    color: #a6e22e;
-    padding: 0 0 0.5rem 0;
+    color: #f92672;
+    margin: 0 0 0.5rem 0;
 }
 
 .input.light {
-    color: #dc322f;
+    color: #2aa198;
 }
 
 .output {
-    color: #e6db74;
-    padding: 0 0 0.75rem 2.5rem;
+    color: #ddfaff;
+    margin: 0 0 0.75rem 2.5rem;
 }
 
 .output.light {
-    color: #2aa198;
+    color: #fb6a9f;
 }
 
 .link {
@@ -74,5 +76,31 @@
 }
 
 .link.light {
-    color: #859900;
+    color: #ae81ff;
 }
+
+#HelloWorld {
+    display: inline-block;
+    border-right: .15rem solid lightgray;
+    animation: cursor 1s step-end infinite;
+}
+
+@keyframes cursor {
+    from, to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: lightgray;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%
+    }
+} 
