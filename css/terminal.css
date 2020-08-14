@@ -20,7 +20,7 @@
 
 #terminal-content {
     padding: 1rem 0.75rem;
-    background: #49483E;
+    background: #272822;
     border-style: none;
     border-radius: 0 0 0.5rem 0.5rem;
 }
@@ -51,21 +51,21 @@
 }
 
 .input {
-    color: #a6e22e;
+    color: #f92672;
     margin: 0 0 0.5rem 0;
 }
 
 .input.light {
-    color: #dc322f;
+    color: #2aa198;
 }
 
 .output {
-    color: #e6db74;
+    color: #d3f8ff;
     margin: 0 0 0.75rem 2.5rem;
 }
 
 .output.light {
-    color: #2aa198;
+    color: #fb6a9f;
 }
 
 .link {
@@ -74,7 +74,7 @@
 }
 
 .link.light {
-    color: #859900;
+    color: #ae81ff;
 }
 
 #HelloWorld {
