@@ -79,6 +79,11 @@
     color: #ae81ff;
 }
 
+.link:hover {
+    text-decoration: underline;
+}
+
+
 #HelloWorld {
     display: inline-block;
     border-right: .15rem solid lightgray;
