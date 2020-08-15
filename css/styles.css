@@ -30,6 +30,10 @@ header a {
     animation-duration: 0.5s;
 }
 
+header a:hover {
+    text-decoration: underline;
+}
+
 #name {
     font-size: 2.5rem;
     animation-name: bounce;
@@ -49,7 +53,7 @@ header a {
 }
 
 .section {
-    padding: 1rem 0 0 0;
+    margin: 1rem 0 0 0;
 }
 
 .title-wrapper {
@@ -62,8 +66,9 @@ header a {
     animation-duration: 0.5s;
 }
 
-.underline:hover {
-    text-decoration: underline;
+footer {
+    font-size: 0.75rem;
+    text-align: center;
 }
 
 @keyframes bounce {
