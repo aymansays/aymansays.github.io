@@ -1,2 +1,2 @@
-# ayman-faisal.github.io
+# aymansays.github.io
 ![Website gif](img/Website.gif)
