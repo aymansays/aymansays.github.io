@@ -42,11 +42,7 @@ header a:hover {
 
 .icon {
     height: 1.5rem;
-    width: 1.5rem;    
-}
-
-#Twitter {
-    animation-delay: 0s;
+    width: 1.5rem;
 }
 
 #Github {
