@@ -1,3 +1,1 @@
-# aymansays.github.io
-
-![Website gif](img/Website.gif)
+# [aymansays.github.io](https://aymansays.github.io/)
